@@ -33,7 +33,7 @@ HackSpace is a tool by the Hackers for the Hackers. Inspiration - [Workana](http
 - User can *create* a workspace for *themselves* or *invite a team*.
 - **Workspace creation** involves *adding above mentioned tools into it*.
 - This hack workspace for team *will be similar to the working space* of [Canva]() where **multiple people can work on same project**, **use same tools (even add more tools as required), make notes, add comments, add tasks, add other actions etc.**
-- These *working spaces can be customised everytime*, allowing for flexibility and can also be **saved as a template for making projects of similar type in future.**
+- These *working spaces can be customised everytime teammates/users want to*, allowing for flexibility and can also be **saved as a template for making projects of similar type in future.**
 - Users can **duplicate workspace**.
 - Users can make workspaces **private and public** as and when required.
 - It offers **lock, hide and deny access features** also, while working in teams.
