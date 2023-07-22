@@ -1,5 +1,16 @@
-# Welcome to HackSpace
+<div align="center">
+
+<h1>Welcome to HackSpace</h1>
+
+![HackSpaceLogo](https://raw.githubusercontent.com/arcVaishali/HackSpace/main/src/assets/HackSpaceLogo/ActualLogo/1.png?token=GHSAT0AAAAAACAYQRJZ7RFZKC6BFRFEJCRIZF3YBOA) 
+
+</div> 
+
+--------------------------------------------------------------------------------------------------------------------
+
+
 HackSpace is a tool by the Hackers for the Hackers. Inspiration - [Workana](https://workona.com) and [Toby](https://www.gettoby.com/). These tools are not developer specific and freely available. We aim to make a tool which has the following features. 
+
 
 ### Features
 - It will be easily accessible and available for use as a **Chrome Extension- Developer Tool**
