@@ -1,9 +1,10 @@
-import React, { useContext, useState } from 'react';
+import  { useContext, useState } from 'react';
 import circularLogo from '../assets/HackSpaceLogo/CircularLogo/2.png';
 import { Link } from 'react-router-dom';
 import { AppwriteContext } from '../context/appwrite';
-import { Account, ID } from 'appwrite';
+import { Account, AppwriteException, ID } from 'appwrite';
 import { toast } from 'react-toastify';
+import GoogleSignUp from '../components/GoogleSignUp';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -11,7 +12,7 @@ const Register = () => {
     const client = useContext(AppwriteContext);
     const account = new Account(client);
 
-    const onSubmit = async (e) => {
+    const onSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
         e.preventDefault();
         try {
             const res = await account.create(ID.unique(), email, password);
@@ -19,7 +20,7 @@ const Register = () => {
             toast.success('Sign Up Successful');
         } catch (error) {
             console.log(error);
-            toast.error('Sign Up Failed: ' + error.message);
+            toast.error('Sign Up Failed: ' + (error as AppwriteException).message);
         }
     };
     return (
@@ -45,16 +46,18 @@ const Register = () => {
                 />
                 <button
                     type='submit'
-                    className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-3/4'
+                    className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg w-3/4 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 dark:focus:ring-[#4285F4]/55'
                 >
                     Signup
                 </button>
                 <Link
                     to='/login'
-                    className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-3/4 text-center'
+                    className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg w-3/4 text-center focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 dark:focus:ring-[#4285F4]/55'
                 >
                     Login
                 </Link>
+
+                <GoogleSignUp />
             </form>
         </div>
     );
