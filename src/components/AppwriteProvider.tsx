@@ -1,7 +1,7 @@
-import React, { useState} from 'react';
+import { useState} from 'react';
 import { Client } from 'appwrite';
 import { AppwriteContext } from '../context/appwrite';
-import appwriteConfig from '../appwrite.json';
+import appwriteConfig from '../appwrite';
 
 const AppwriteProvider = ({ children}: {children: React.ReactNode}) => {
     const [client] = useState(new Client());

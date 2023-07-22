@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -8,6 +8,9 @@ import Login from './pages/login.tsx';
 import Register from './pages/register.tsx';
 import { ToastContainer } from 'react-toastify';
 import AppwriteProvider from './components/AppwriteProvider.tsx';
+import UserProvider from './components/UserProvider.tsx';
+import Me from './pages/me.tsx';
+import Logout from './pages/logout.tsx';
 
 const router = createBrowserRouter([
     {
@@ -22,12 +25,22 @@ const router = createBrowserRouter([
         path: 'register',
         element: <Register />,
     },
+    {
+      path: 'me',
+      element: <Me />,
+    },
+    {
+        path: 'logout',
+        element: <Logout />,
+    }
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <AppwriteProvider>
-            <RouterProvider router={router} />
-            <ToastContainer />
+            <UserProvider>
+                <RouterProvider router={router} />
+                <ToastContainer />
+            </UserProvider>
         </AppwriteProvider>
     </React.StrictMode>
 );

@@ -1,26 +1,40 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { Account } from 'appwrite';
+import { Account, AppwriteException } from 'appwrite';
 
 import circularLogo from '../assets/HackSpaceLogo/CircularLogo/2.png';
 import { AppwriteContext } from '../context/appwrite';
+import { UserContext } from '../context/user';
 
 const login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const client = useContext(AppwriteContext);
+    const { state, setState, setUser } = useContext(UserContext);
     const account = new Account(client);
 
-    const onSubmit = async (e) => {
+    if(!setState || !setUser || state === 'loading') {
+        return (
+            <div>Loading...</div>
+        )
+    }
+    if(state === 'loggedin') {
+        return (
+            <div>User is already logged in!</div>
+        )
+    }
+    const onSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
         e.preventDefault();
         try {
             const res = await account.createEmailSession(email, password);
             console.log(res);
             toast.success('Login Successful');
+            setState('loggedin');
+            setUser(res);
         } catch (error) {
             console.log(error);
-            toast.error('Login Failed: ' + error.message);
+            toast.error('Login Failed: ' + (error as AppwriteException).message);
         }
     };
     return (
