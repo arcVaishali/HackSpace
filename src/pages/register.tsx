@@ -2,7 +2,7 @@ import React from 'react';
 import circularLogo from '../assets/HackSpaceLogo/CircularLogo/2.png';
 import { Link } from 'react-router-dom';
 
-const login = () => {
+const Register = () => {
     const onSubmit = (e) => {
         e.preventDefault();
     };
@@ -24,14 +24,14 @@ const login = () => {
                     placeholder='Password'
                 />
                 <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-3/4'>
-                    Login
+                    Signup
                 </button>
-                <Link to="/register" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-3/4 text-center'>
-                    Register
+                <Link to="/login" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-3/4 text-center'>
+                    Login
                 </Link>
             </form>
         </div>
     );
 };
 
-export default login;
+export default Register;
