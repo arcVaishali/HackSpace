@@ -11,6 +11,7 @@ import AppwriteProvider from './components/AppwriteProvider.tsx';
 import UserProvider from './components/UserProvider.tsx';
 import Me from './pages/me.tsx';
 import Logout from './pages/logout.tsx';
+import TeamView from './pages/teamView.tsx';
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     {
         path: 'logout',
         element: <Logout />,
+    },
+    {
+        path: 'teamView',
+        element: <TeamView />,
     }
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
