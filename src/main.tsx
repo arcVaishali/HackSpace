@@ -17,7 +17,7 @@ import UserLoginCheck from './components/UserLoginCheck.tsx';
 import CreateTeam from './pages/CreateTeam.tsx';
 import AcceptInvitation from './pages/AcceptInvitation.tsx';
 import ChangePassword from './pages/ChangePassword.tsx';
-import MyWorkSpace from './pages/myworkspace.tsx';
+import MyWorkSpace from './pages/Workspace.tsx';
 
 const router = createBrowserRouter([
     {

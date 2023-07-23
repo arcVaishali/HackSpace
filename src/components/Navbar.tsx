@@ -4,7 +4,7 @@ import Button from '../components/Button';
 import { UserContext } from '../context/user';
 import * as md5 from 'md5';
 
-const MyWorkSpace = () => {
+const Navbar = () => {
     const { user } = useContext(UserContext);
 
     return (
@@ -56,4 +56,4 @@ const MyWorkSpace = () => {
     );
 };
 
-export default MyWorkSpace;
+export default Navbar;

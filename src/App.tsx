@@ -1,18 +1,18 @@
 import './App.css'
-import MyWorkSpace from './pages/myworkspace'
+import Navbar from './components/Navbar';
+import MyWorkSpace from './pages/Workspace';
 
 
 function App() {
 
   return (
-    <>
-    <MyWorkSpace/>
-   
-    </>
-    // <div className="text-3xl font-bold underline">
-    //    This is the home page.
-    // </div>
-  )
+      <>
+          <Navbar />
+      </>
+      // <div className="text-3xl font-bold underline">
+      //    This is the home page.
+      // </div>
+  );
 }
 
 export default App
