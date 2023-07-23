@@ -1,24 +1,6 @@
-<<<<<<< HEAD
-import bimage from "./../assets/homebg.png";
-import Toolbar from "../components/toolbar";
-import Navbar from "../components/navbar";
-
-const MyWorkSpace = () => {
-  return (
-    <div
-      className="h-screen w-screen bg-contain bg-no-repeat"
-      style={{ backgroundImage: `url(${bimage})`, backgroundPosition : "center", backgroundRepeat : "no-repeat" }}
-    >
-      <div className="w-full flex relative">
-        <Navbar />
-        <Toolbar />
-      </div>
-    </div>
-  );
-=======
 import bimage from './../assets/homebg.png';
 import Toolbar from '../components/toolbar';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar';
 import Tabs from '../components/Tabs';
 import NotesManager from '../components/NotesManager';
 import TasksManager from '../components/TasksManager';
@@ -41,7 +23,6 @@ const MyWorkSpace = () => {
             </div>
         </div>
     );
->>>>>>> 619f5a45d19e78eff98e08f21c07fa215aa0a030
 };
 
 export default MyWorkSpace;
