@@ -23,7 +23,7 @@ const AcceptInvitation = () => {
             }
             const teams = new Teams(client);
             try {
-                const res = await teams.updateMembershipStatus(
+                await teams.updateMembershipStatus(
                     teamId,
                     membershipId,
                     userId,

@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import MyWorkSpace from './pages/Workspace';
 
 function App() {
     return (

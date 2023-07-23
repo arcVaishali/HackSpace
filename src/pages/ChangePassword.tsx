@@ -30,7 +30,7 @@ const ChangePassword = () => {
             // Passwords match - handle form submission logic here
             const account = new Account(client);
             try {
-                const res = await account.updatePassword(
+                await account.updatePassword(
                     password,
                     oldPassword ? oldPassword : undefined
                 );
