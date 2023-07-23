@@ -9,6 +9,7 @@ interface Props {
     onClick :(event : React.MouseEvent<HTMLButtonElement>)=> void;
     radius : string;
     width : string;
+    fontColor?: string;
 }
 
 const Button: React.FC<Props> = ({ 

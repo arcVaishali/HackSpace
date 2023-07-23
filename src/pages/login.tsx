@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Account, AppwriteException } from 'appwrite';
 
@@ -15,25 +15,24 @@ const login = () => {
     const { state, setState, setUser } = useContext(UserContext);
     const account = new Account(client);
 
-    if(!setState || !setUser || state === 'loading') {
-        return <Loading />
+    if (!setState || !setUser || state === 'loading') {
+        return <Loading />;
     }
-    if(state === 'loggedin') {
-        return (
-            <div>User is already logged in!</div>
-        )
+    if (state === 'loggedin') {
+        return <Navigate to='/me' />;
     }
     const onSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
         e.preventDefault();
         try {
             const res = await account.createEmailSession(email, password);
-            console.log(res);
             toast.success('Login Successful');
             setState('loggedin');
             setUser(res);
         } catch (error) {
-            console.log(error);
-            toast.error('Login Failed: ' + (error as AppwriteException).message);
+            console.error(error);
+            toast.error(
+                'Login Failed: ' + (error as AppwriteException).message
+            );
         }
     };
     return (

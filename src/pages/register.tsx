@@ -15,11 +15,10 @@ const Register = () => {
     const onSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
         e.preventDefault();
         try {
-            const res = await account.create(ID.unique(), email, password);
-            console.log(res);
+            await account.create(ID.unique(), email, password);
             toast.success('Sign Up Successful');
         } catch (error) {
-            console.log(error);
+            console.error(error);
             toast.error('Sign Up Failed: ' + (error as AppwriteException).message);
         }
     };
