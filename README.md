@@ -4,7 +4,7 @@
 
 <!--<img width="300" src="src\assets\HackSpaceLogo\ActualLogo\1.png">-->
 
-![HackSpaceLogo](src\assets\HackSpaceLogo\ActualLogo\1.png)(https://raw.githubusercontent.com/arcVaishali/HackSpace/main/src/assets/HackSpaceLogo/ActualLogo/1.png?token=GHSAT0AAAAAACAYQRJZ7RFZKC6BFRFEJCRIZF3YBOA)  
+![HackSpaceLogo](https://raw.githubusercontent.com/arcVaishali/HackSpace/main/src/assets/HackSpaceLogo/ActualLogo/1.png?token=GHSAT0AAAAAACAYQRJZ7RFZKC6BFRFEJCRIZF3YBOA)  
 
 </div> 
 
