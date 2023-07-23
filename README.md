@@ -70,7 +70,14 @@ The most valuable skill that we learnt is time management, focusing on first bui
 
 - It offers **lock, hide and deny access features** also, while working in teams.
 - At each step users **can share the link of current workspace to other team mates and start working from scratch**.
-- In addition to these *distinguishing features*, HackSpace will provide, **Fullscreen mode, Change Theme options, Create new section option and will be availbe with Autosave capability**. 
+- In addition to these *distinguishing features*, HackSpace will provide, **Fullscreen mode, Change Theme options, Create new section option and will be availbe with Autosave capability**.
+
+### Features added-
+- [x] Login Page 
+- [x] Sign up Page
+- [x] Workspace Page
+- [x] Home Page
+- [x] Create team Page
 
 
 
