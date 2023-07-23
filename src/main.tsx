@@ -22,7 +22,7 @@ import MyWorkSpace from './pages/Workspace.tsx';
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <App />,
+        element: <Login />,
     },
     {
         path: 'login',
