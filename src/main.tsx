@@ -17,6 +17,7 @@ import UserLoginCheck from './components/UserLoginCheck.tsx';
 import CreateTeam from './pages/CreateTeam.tsx';
 import AcceptInvitation from './pages/AcceptInvitation.tsx';
 import ChangePassword from './pages/ChangePassword.tsx';
+import MyWorkSpace from './pages/myworkspace.tsx';
 
 const router = createBrowserRouter([
     {
@@ -66,6 +67,14 @@ const router = createBrowserRouter([
     {
         path: 'team/accept',
         element: <AcceptInvitation />,
+    },
+    {
+        path: 'workspace',
+        element: (
+            <UserLoginCheck>
+                <MyWorkSpace />
+            </UserLoginCheck>
+        ),
     },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
