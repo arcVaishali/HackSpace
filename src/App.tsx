@@ -1,14 +1,12 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 
 function App() {
     return (
-        <>
-            <Navbar />
-        </>
-        // <div className="text-3xl font-bold underline">
-        //    This is the home page.
-        // </div>
+      
+        <div className="text-3xl font-bold underline">
+           This is the home page.
+        </div>
     );
 }
 
