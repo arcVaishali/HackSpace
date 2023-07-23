@@ -6,6 +6,7 @@ import { Account, AppwriteException } from 'appwrite';
 import circularLogo from '../assets/HackSpaceLogo/CircularLogo/2.png';
 import { AppwriteContext } from '../context/appwrite';
 import { UserContext } from '../context/user';
+import Loading from '../components/Loading';
 
 const login = () => {
     const [email, setEmail] = useState('');
@@ -15,9 +16,7 @@ const login = () => {
     const account = new Account(client);
 
     if(!setState || !setUser || state === 'loading') {
-        return (
-            <div>Loading...</div>
-        )
+        return <Loading />
     }
     if(state === 'loggedin') {
         return (

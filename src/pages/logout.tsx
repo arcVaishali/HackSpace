@@ -2,6 +2,7 @@ import { useContext, useEffect } from 'react';
 import { Account } from 'appwrite';
 import { AppwriteContext } from '../context/appwrite';
 import { UserContext } from '../context/user';
+import Loading from '../components/Loading';
 
 const Logout = () => {
     const client = useContext(AppwriteContext);
@@ -9,7 +10,7 @@ const Logout = () => {
     const account = new Account(client);
 
     if (!setUser || !setState || state === 'loading') {
-        return <div>Loading...</div>;
+        return <Loading />;
     }
     if (state !== 'loggedin') {
         return <div>User is not logged in!</div>;

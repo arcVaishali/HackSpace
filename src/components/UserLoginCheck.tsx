@@ -1,13 +1,14 @@
 import {useContext} from 'react'
-import { redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { UserContext } from '../context/user';
+import Loading from './Loading';
 
 const UserLoginCheck = ({ children}: {children: React.ReactNode}) => {
     const { state } = useContext(UserContext);
 
     if(state === 'loading') {
         return (
-            <div>Loading...</div>
+            <Loading />
         )
     }
     if(state === 'loggedin') {
@@ -17,7 +18,9 @@ const UserLoginCheck = ({ children}: {children: React.ReactNode}) => {
             </>
         )
     } else {
-        redirect('/login');
+        return (
+            <Navigate to='/login' />
+        )
     }
 }
 
