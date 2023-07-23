@@ -6,6 +6,8 @@
 
 ![HackSpaceLogo](https://raw.githubusercontent.com/arcVaishali/HackSpace/main/src/assets/HackSpaceLogo/ActualLogo/1.png?token=GHSAT0AAAAAACAYQRJZ7RFZKC6BFRFEJCRIZF3YBOA)  
 
+Design- [Figma](https://www.figma.com/file/QkhR6KR31oLELFiJwln7CH/HackSpace?type=design&node-id=0%3A1&mode=design&t=ZCbSgSp4ydPNNCCh-1)
+
 </div> 
 
 --------------------------------------------------------------------------------------------------------------------
