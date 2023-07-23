@@ -18,7 +18,7 @@ We aim to make a similar product which will be **Hackathon/Developer specific**,
 Tools like Workona and Toby are also not easily accessible and affordable, hence our solution- HACKSPACE
 
 ### Features
-- It is easily accessible and available for use as a **Chrome Extension- Developer Tool**
+- It will be easily accessible and available for use as a **Chrome Extension- Developer Tool**. For now our goal is to create a website which will later be available as an extension.
 - It is like a **container** consisting of various **tools** like-
    + **Designer Tools** like,
       - Figma, Moqups, Basalmiq, Invision, Axure, OmniGraffle
