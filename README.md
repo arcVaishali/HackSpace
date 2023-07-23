@@ -15,7 +15,7 @@ Design- [Figma](https://www.figma.com/file/QkhR6KR31oLELFiJwln7CH/HackSpace?type
 
 HackSpace is a tool by the Hackers for the Hackers which draws inspiration from [Workana](https://workona.com), [Toby](https://www.gettoby.com/) and [Canva](https://www.canva.com/) - These tools provide workspace like feature for managing tabs in browser and allow for multiple people in a team to collaborate and work on the same project simultaneously, respectively.
 
-We aim to make a similar product which will be **Hackathon/Developer specific**, like a **container** with everything a Hacker needs to successfully collaborate, build, see teammates' progress without glitch. This tool will be available as a **Chrome Extension**, which users can easily download and use.
+We aim to make a similar product which will be **Hackathon/Developer specific**, like a **container** with everything a Hacker needs to successfully collaborate, build, see teammates' progress without glitch. This tool will be available as a **Chrome Extension**, which users can easily download and use but for now our goal is to create a website which will later be available as an extension.
 
 Tools like Workona and Toby are also not easily accessible and affordable, hence our solution- HACKSPACE
 
