@@ -22,7 +22,7 @@ const Logout = () => {
                 setUser(null);
                 setState('loggedout');
             } catch (error) {
-                console.log(error);
+                console.error(error);
             }
         })();
     });
