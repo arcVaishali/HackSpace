@@ -11,12 +11,12 @@
 --------------------------------------------------------------------------------------------------------------------
 
 
-HackSpace is a tool by the Hackers for the Hackers. Inspiration - [Workana](https://workona.com) and [Toby](https://www.gettoby.com/) - These tools are not developer specific and freely available. We aim to make a tool which has the following features. 
+HackSpace is a tool by the Hackers for the Hackers which draws inspiration from [Workana](https://workona.com) and [Toby](https://www.gettoby.com/) - These tools are not developer specific and are not freely available.  
 
 
 ### Features
-- It will be easily accessible and available for use as a **Chrome Extension- Developer Tool**
-- It will be like a **container** consisting of various **tools** like-
+- It is easily accessible and available for use as a **Chrome Extension- Developer Tool**
+- It is like a **container** consisting of various **tools** like-
    + **Designer Tools** like,
       - Figma, Moqups, Basalmiq, Invision, Axure, OmniGraffle
    + **File sharing tools** like,
@@ -31,14 +31,14 @@ HackSpace is a tool by the Hackers for the Hackers. Inspiration - [Workana](http
    + Other design tools for **fonts, background, CSS** etc.
    + **Documentation tools** etc.
 - User can *create* a workspace for *themselves* or *invite a team*.
-- **Workspace creation** involves *adding above mentioned tools into it*.
+- **Workspace creation** involves *selecting above mentioned tools from the section- select tools*.
 - This hack workspace for team *will be similar to the working space* of [Canva]() where **multiple people can work on same project**, **use same tools (even add more tools as required), make notes, add comments, add tasks, add other actions etc.**
 - These *working spaces can be customised everytime teammates/users want to*, allowing for flexibility and can also be **saved as a template for making projects of similar type in future.**
 - Users can **duplicate workspace**.
 - Users can make workspaces **private and public** as and when required.
 - It offers **lock, hide and deny access features** also, while working in teams.
 - At each step users **can share the link of current workspace to other team mates and start working from scratch**.
-- In addition to these *distinguishing features*, HackSpace will provide, **Fullscreen mode, Change Theme options, Create new section option and will be availbe with Autosave capability**.
+- In addition to these *distinguishing features*, HackSpace will provide, **Fullscreen mode, Change Theme options, Create new section option and will be availbe with Autosave capability**. 
 
 
 
